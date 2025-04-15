@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="component.css" />
+    <title>Pietro | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="root-container">
+      <div class="bg-img-container"></div>
+      <div class="flex-container">
+        <div class="text-div">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="signup">
+          <button class="try-it">
+            <b>Try it free 7 days</b> then $20/mo. thereafter
+          </button>
+          <form id="form" name="signup-form" novalidate>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <p class="error-text"><i>First name cannot be empty</i></p>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Last Name"
+            />
+            <p class="error-text"><i>Last name cannot be empty</i></p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <p class="error-text"><i>Looks like this is not an email</i></p>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <p class="error-text"><i>Password cannot be empty</i></p>
+            <button type="submit" id="submit" name="submit">
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+              <b>Terms and Services</b>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="signup-form.js"></script>
+  </body>
+</html>

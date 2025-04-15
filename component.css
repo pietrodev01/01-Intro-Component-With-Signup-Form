@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+/********** Fonts **********/
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/********** Signup Form Mobile First **********/
+
+body {
+  margin: 0;
+}
+
+.root-container {
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 32px 24px;
+}
+
+.flex-container {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+/********** Text Div **********/
+.text-div {
+  text-align: center;
+  color: white;
+  flex: 1 1 45%;
+  max-width: 525px;
+}
+
+/********** Signup Div **********/
+
+.signup {
+  flex: 1 1 calc(55% - 32px);
+  max-width: 540px;
+}
+
+.try-it {
+  width: 100%;
+  padding: 16px 80px;
+  margin-bottom: 24px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 10px;
+  line-height: 160%;
+  cursor: pointer;
+}
+
+#form {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+#form input + input {
+  margin-top: 16px;
+}
+
+#form input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  border: solid 0.5px grey;
+}
+
+input[placeholder] {
+  font-weight: 700;
+}
+
+#submit {
+  margin-top: 16px;
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.terms {
+  text-align: center;
+}
+
+.terms b {
+  color: hsl(0, 100%, 74%);
+}
+
+/********** Javascript **********/
+
+.error-text {
+  text-align: right;
+  margin: 4px 0px;
+  font-size: 14px;
+  color: hsl(0, 100%, 74%);
+  visibility: hidden;
+}
+
+@media (min-width: 512px) {
+  .root-container {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/bg-intro-desktop.png);
+  }
+
+  .flex-container {
+    width: 80%;
+  }
+
+  .text-div {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
